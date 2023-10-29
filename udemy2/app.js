@@ -5,7 +5,7 @@ const path = require('path');
 
 const app = express();
 
-const adminRouters = require('./routes/admin');
+const adminData = require('./routes/admin');
 const shopRouters = require('./routes/shop');
 
 // // use()는 미들웨어를 등록하는 메소드.
@@ -36,7 +36,7 @@ app.use('/',(req,res,next)=>{
     next();
 });
 
-app.use('/admin',adminRouters);
+app.use('/admin',adminData);
 app.use(shopRouters);
 
 app.use((req,res,next)=>{

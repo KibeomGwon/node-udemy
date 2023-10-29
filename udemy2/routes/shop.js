@@ -11,7 +11,7 @@ router.get('/',(req,res, next)=>{
     // console.log('In another middleware!');
     // __dirname은 이 프로젝트의 경로를 나타내는 변수이다.
     // res.sendFile(path.join(__dirname, '..', 'views', 'shop.html'));
-    res.sendFile(path.join(rootDir, 'views', 'shop.html'));
+    res.sendFile(path.join(rootDir,'views','shop.html'));
 });
 
 module.exports = router;
